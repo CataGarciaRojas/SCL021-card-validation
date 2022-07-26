@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* img de fondo*/
+body {
+    background-image: url("img/img2.jpg");
+    background-size: auto;
+    margin: 0 10px;
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}
+
+.fondo1 {
+    background: rgb(224,57,242);
+    background: linear-gradient(130deg, rgba(224,57,242,0.5606617647058824) 32%, rgba(98,118,255,0.65) 71%);
+    max-width: 500px;
+    margin: 80px auto;
+    height: auto;
+    padding: 80px;
+    padding-top: 20px;
+    border-radius: 14px;
+    position: relatives;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.fondo1 h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+}
+
+.formulario-tarjeta {
+    font-family: 'Lobster', cursive;
+    display: block;
+    color: #ffffff;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+
+}
+
+input {
+    font-family: 'Lobster', cursive;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid violet;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    color: black;
+    max-width: 486px;
+}
+
+.contenedor {
+    position: relative;
+}
+
+/* CSS BTN*/
+
+.btnvalidar {
+    padding: 8px;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+    position: relative;
+    bottom: -50px;
+    left: 50px;
+    transform: translate(-50%, -50%);
+}
+
+.btnvalidar:before {
+    content: "";
+    background: linear-gradient(45deg,
+            #7a00ff,
+            #ff00c8,
+            #ff00ea56);
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.btnvalidar:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: violet;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}

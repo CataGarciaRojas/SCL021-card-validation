@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Validador</title>
+  <link rel="stylesheet" href="style.css" />
+
+
+</head>
+
+<body>
+  <header></header>
+
+  <main>
+
+    <!-- DATOS DE TARJETA -->
+
+    <div class="contenedor">
+      <div class="fondo1">
+
+        <h2>Ingresa los datos de tu tarjeta para finalizar la compra.</h2>
+
+        <section class="box1">
+          <form class="formulario-tarjeta" id="formulario">
+
+            <label for="name">Nombre del titular: </label>
+            <input type="text" id="inputName" placeholder="Ingresa el nombre" autocomplete="off">
+            <br>
+            <label for="ccnumber">Número de tarjeta:</label>
+            <input type="text" id="tarjeta" maxlength="16" placeholder="xxxx xxxx xxxx xxxx" autocomplete="off"
+              class="form-control" pattern="^[0-9]+">
+            <br>
+            <label for="month">Mes:</label>
+            <input type="text" id="month" placeholder="xx" minlength="2" maxlength="2" autocomplete="off">
+            <br>
+            <label for="year">Año:</label>
+            <input type="text" id="year" placeholder="xxxx" minlength="4" maxlength="4" autocomplete="off">
+            <br>
+            <label for="cvv">CVV:</label>
+            <input type="text" placeholder="xxx" minlength="3" maxlength="3" autocomplete="off" id="cvv">
+            <br><br>
+          </form>
+
+          <!-- MENSAJE DE SI ES VÁLIDA O INVÁLIDA LA TARJETA -->
+          <div id="validacion">
+          </div>
+
+          <!-- BTN VALIDAR TARJETA -->
+          <div class="btncontenedor">
+            <button class="btnvalidar" type="button" id="botonvalidar" value="Validar">¡Comprar!</button>
+          </div>
+          <br>
+
+        </section>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>
+    </p>
+  </footer>
+
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
